@@ -1,0 +1,96 @@
+@media only screen and (orientation:portrait){
+
+
+  @media (min-width:481px) and (max-width: 768px) {
+    .loginCard{    
+      position: absolute;
+      left: 15%;
+      right: 15%;
+      top: 25%;
+     // height:50%
+    }
+  }
+  @media only screen and (max-device-width:480px){
+    .loginCard{
+      position: absolute;
+      left: 5px;
+      right: 5px;
+      top: 25%;
+     // height:50%;
+    }
+  }
+}
+@media only screen and (orientation:landscape){
+
+
+  @media (min-device-width : 768px) and (max-device-width : 1024px) {
+    .loginCard{    
+      position: absolute;
+      left: 15%;
+      right: 15%;
+      top: 25%;
+     // height:50%
+    }
+  }
+  @media (min-device-width : 320px) and (max-device-width:840px){
+    .loginCard{    
+      position: absolute;
+      left: 15%;
+      right: 15%;
+      top: 25%;
+     // height:50%;
+    }
+  }
+}
+
+.loginButton{
+  width:100%;
+  text-align: center;
+  padding-top: 10px;
+  --background:#4B7DB4;
+  padding-bottom: 18px;
+  font-size: 20px !important;
+  
+}
+.error-message {
+  color: var(--ion-color-danger);
+}
+.md .showicon{
+display: none;
+}
+.ios img {
+  background-size: contain !important;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  padding-left: 50px;
+  margin-left:5px !important;
+  background: url('../images/ExAMRV.png') no-repeat right center;
+  float:right;
+}
+.removeShadowInput{
+  -webkit-appearance: none;
+}
+
+ion-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.md ion-title {
+  background-size: contain !important;
+  line-height: 50px;
+  background: url('../images/ExAMRV.png') no-repeat right center;
+  background-position:right !important;
+  text-align: center !important;
+  
+}
+.slds-input[readonly] {
+  border-color:#ccc;
+  background-color: #f6f5f9;
+  pointer-events: none;
+  touch-action: none;
+}
+.roomnam .item-native {
+  -webkit-padding-start:0px !important;
+   padding-inline-start: 0px !important;
+}

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar style="--background: #4B7DB4 !important;height:60px !important">
+    <ion-buttons slot="start" style="height:60px !important">
+      <ion-button color="dark" (click)="closeModal()">
+          <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+  </ion-buttons>
+    <ion-title class="ion-text-center" text-capitalize style="color: white;">Update Video Room Link</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <article class="slds-card loginCard">
+      <div class="slds-card__body slds-card__body_inner">
+        <div class="slds-form-element" >
+          <label class="slds-form-element__label"  for="nametext">Paste or Enter Room Link</label>
+          <div class="slds-form-element__control">
+            <input type="text"  class="slds-input removeShadowInput" id="nametext"  [(ngModel)]="roomlink.roomlink"/>
+          </div>
+        </div>
+      </div>
+  </article>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar style="text-align:center">
+    <button style="--background:#4B7DB4;line-height:2.1rem !important" class="slds-button slds-button_brand slds-size--11-of-12 slds-medium-size--3-of-12 slds-large-size--3-of-12" (click)="processDeeplinkURL()">Update</button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,909 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		04F2CF21EA7549F8A3F9F193 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2F72AE70884535B8865EE3 /* AFHTTPSessionManager.m */; };
+		08FEF65276F64E459A04A99D /* TwilioVideo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99BE62CEE4740849F6BCB9D /* TwilioVideo.storyboard */; };
+		0B27B708022F4454A3C424E9 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 003E622E487B450D81584836 /* CDVStatusBar.m */; };
+		0B8C62EF5F7B4C5693771259 /* TwilioVideoPermissions.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C50E17604F4E909438591B /* TwilioVideoPermissions.m */; };
+		1306EC99A61F44D7907FAF9F /* end_call@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA9683202779423DB95085F6 /* end_call@2x.png */; };
+		19E88B0FFC774F95BC743511 /* TwilioVideoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD44C998D15492AA20D1A85 /* TwilioVideoConfig.m */; };
+		1A150054DBFE46DF833ABA6F /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E7D5A3AA09432195428E10 /* CDVSplashScreen.m */; };
+		1CD84DFF0DE947B6BE76C60F /* TwilioVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 037869CCADAE433BB408EF70 /* TwilioVideoViewController.m */; };
+		1D34B34F85C9463EB360BBAE /* TwilioVideoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D1990A038F984E3C97ECB37F /* TwilioVideoUtils.m */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		24EC0811B0A6400DAEE043AF /* CDVAssetLibraryFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B10F1EC3AA54666A72BDD53 /* CDVAssetLibraryFilesystem.m */; };
+		2673675E5A8C4751BE9B663D /* CDVIonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA41E69E54647C2AAD35403 /* CDVIonicKeyboard.m */; };
+		26DFE0B171BB480D97233E7B /* CDVLocalFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD18D0FA7E04C838BB02D15 /* CDVLocalFilesystem.m */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		312B7E8CF7D94B80BDE5439E /* SDNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A10B1AC1A41D3A0904AC5 /* SDNetworkActivityIndicator.m */; };
+		34D2873C40274FC1B2CCCC03 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C52461074CD4CC2A74DF7D3 /* AFURLRequestSerialization.m */; };
+		3BD6E83A5FC5F1854632B4CB /* libPods-ExAM RV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A578AB8E845EC026DA1974 /* libPods-ExAM RV.a */; };
+		4F1A485375374737AAB2FE8F /* TwilioVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED313FE1D094BA6BD8E8BBC /* TwilioVideoManager.m */; };
+		52EE6F575AD04F7B93F5F156 /* video@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C642DC1F24C4B50BA5DFA8E /* video@3x.png */; };
+		573CC8FE2518E94900BF9F81 /* no_video11.png in Resources */ = {isa = PBXBuildFile; fileRef = 573CC8FC2518E94900BF9F81 /* no_video11.png */; };
+		573F65EF29023A7F0037AB26 /* menu.svg in Resources */ = {isa = PBXBuildFile; fileRef = 573F65ED29023A7E0037AB26 /* menu.svg */; };
+		573F65F5290327E90037AB26 /* menu-502.png in Resources */ = {isa = PBXBuildFile; fileRef = 573F65F3290327E90037AB26 /* menu-502.png */; };
+		573F7D532518D49A00139A5D /* no_mic1.png in Resources */ = {isa = PBXBuildFile; fileRef = 573F7D522518D49300139A5D /* no_mic1.png */; };
+		574EB22D251230C300773B27 /* ExAMRV.png in Resources */ = {isa = PBXBuildFile; fileRef = 574EB22B251230C300773B27 /* ExAMRV.png */; };
+		5753734725D1959500B4F6B9 /* end_callfupdated.png in Resources */ = {isa = PBXBuildFile; fileRef = 5753734525D1959200B4F6B9 /* end_callfupdated.png */; };
+		57557408251DBEAC0029C157 /* switch_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57557407251DBEAC0029C157 /* switch_camera@2x.png */; };
+		5755740A251DBEB40029C157 /* no_video@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57557409251DBEB40029C157 /* no_video@3x.png */; };
+		5755740C251DBEB90029C157 /* no_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5755740B251DBEB90029C157 /* no_video@2x.png */; };
+		57557411251DDC4F0029C157 /* micf.png in Resources */ = {isa = PBXBuildFile; fileRef = 57557410251DDC4F0029C157 /* micf.png */; };
+		5755741E251DDD270029C157 /* camera_switch.png in Resources */ = {isa = PBXBuildFile; fileRef = 5755741D251DDD270029C157 /* camera_switch.png */; };
+		57557422251DDD8B0029C157 /* end_callf.png in Resources */ = {isa = PBXBuildFile; fileRef = 57557420251DDD8B0029C157 /* end_callf.png */; };
+		57557424251DE5250029C157 /* videof.png in Resources */ = {isa = PBXBuildFile; fileRef = 57557423251DE5250029C157 /* videof.png */; };
+		57557426251DE5550029C157 /* videof.png in Resources */ = {isa = PBXBuildFile; fileRef = 57557425251DE5550029C157 /* videof.png */; };
+		5783CFA828FEB765000BD1F8 /* close-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 5783CFA728FEB764000BD1F8 /* close-50.png */; };
+		5783CFB128FEB7EC000BD1F8 /* menu-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 5783CFB028FEB7EC000BD1F8 /* menu-50.png */; };
+		57994FF02534770100E45582 /* ExAM_RV-MG-Paused.png in Resources */ = {isa = PBXBuildFile; fileRef = 57994FEF2534770100E45582 /* ExAM_RV-MG-Paused.png */; };
+		57994FF3253604C200E45582 /* ExAM_RV-MG-Paused2.png in Resources */ = {isa = PBXBuildFile; fileRef = 57994FF2253604C200E45582 /* ExAM_RV-MG-Paused2.png */; };
+		579FE74D25CAECDD00DE4B29 /* flashoff.png in Resources */ = {isa = PBXBuildFile; fileRef = 579FE74C25CAECDD00DE4B29 /* flashoff.png */; };
+		579FE74F25CAED5700DE4B29 /* flashon.png in Resources */ = {isa = PBXBuildFile; fileRef = 579FE74E25CAED5600DE4B29 /* flashon.png */; };
+		599ABA99441E43D29E3887CB /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = EE64CD6E60D443A1A22A2878 /* CDVLocation.m */; };
+		5BA97973479B481BAD67FFAC /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B20AB0A72F4DA394771CDD /* video.png */; };
+		5EC478B1C82340C0A07F87FA /* no_video.png in Resources */ = {isa = PBXBuildFile; fileRef = 303A3B0A30D74753AD800E45 /* no_video.png */; };
+		67944832D43D44CBB94A4CA6 /* no_video@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CD5FA2B126040BF933866AE /* no_video@3x.png */; };
+		68C44EE17E3F42A580146DB8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC11B67756C48EFA3668C62 /* CoreTelephony.framework */; };
+		6AC832908E5344E7A3217D30 /* BinaryResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B6AF229764498B8E77804 /* BinaryResponseSerializer.m */; };
+		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		72E978D381CF455C8740E616 /* CDVWKWebViewUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35890D90B8F84D8CB45C013A /* CDVWKWebViewUIDelegate.m */; };
+		75BE47D405AC41A9B274E8D5 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E4D95B79045E2A6533EC5 /* CDVDevice.m */; };
+		774CFD0C5D2A491FAB6DEFD1 /* CDVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FF781F11C4724E02A7329DF9 /* CDVFile.m */; };
+		7BFECAB7144646A38EA483E7 /* mic.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BA5792B66A4202A41B4A57 /* mic.png */; };
+		7E7A6EE8A51A4392BE756824 /* AppDelegate+IonicDeeplink.m in Sources */ = {isa = PBXBuildFile; fileRef = 952863009BD64894917F7EE4 /* AppDelegate+IonicDeeplink.m */; };
+		7EC822758DCA4BEEBB1BDD97 /* CordovaHttpPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 549B6C244BEA49D69E328042 /* CordovaHttpPlugin.m */; };
+		8038F58343F0489193E08C9F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2A392126224F6CBE44B223 /* CoreLocation.framework */; };
+		8A884C4D55404A4C9F6D3C69 /* IonicDeeplinkPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D29EB768054BA5AF835813 /* IonicDeeplinkPlugin.m */; };
+		9B0F70517E0C446285142B89 /* mic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE19F5A634F94AFDA70EBA41 /* mic@2x.png */; };
+		A124370496614F2B8BD82A8D /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 624068A469434BF285A63B6A /* AFNetworkReachabilityManager.m */; };
+		AE403552F24E46C6BF3769E2 /* switch_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DAC5E9586954A1E9D037433 /* switch_camera@2x.png */; };
+		B0EBB19EF94C413594FFDEEA /* no_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D950CFEAE80C48AEB5373B60 /* no_video@2x.png */; };
+		B1FBDF8FF368416295EB64B5 /* IONAssetHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FC05CCA58018417F9B41C500 /* IONAssetHandler.m */; };
+		B339ACE3A24B432594C1328B /* end_call.png in Resources */ = {isa = PBXBuildFile; fileRef = 244B0850964644CCAFDD1CC6 /* end_call.png */; };
+		B75B763B3BC04B00BF51F2AF /* TextRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9FC8857194A0A9D2394DD /* TextRequestSerializer.m */; };
+		BA6D7AF8FAD147B8A730E121 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 70311E4CA6654B81AD3BD3B5 /* CDVViewController+SplashScreen.m */; };
+		BF0496E53B59452D8E77C17E /* CDVWKProcessPoolFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 997FD6BC8C3E49E2B9B7B69C /* CDVWKProcessPoolFactory.m */; };
+		C1CFB2E4A30F4B77AA135590 /* TextResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D0CC14643A4D5C95CC0081 /* TextResponseSerializer.m */; };
+		C5B281E4C79D45B6A250029B /* TwilioVideoPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAE5A3CE4AE499E9CB20C0D /* TwilioVideoPlugin.m */; };
+		CBFC3D9574954343943FE462 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAB889C57B74D5D908F4627 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D8BCEBC365C144BFA948B983 /* CDVWKWebViewEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDF7B16C4D84EFCB387E39C /* CDVWKWebViewEngine.m */; };
+		D9A6911EC19747E2939E1191 /* CDVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DB04ABB61141B8844BB2FB /* CDVReachability.m */; };
+		DA5E274E30274F5A9688529F /* no_mic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D5CD9AAAF04B2DAEFB7800 /* no_mic@3x.png */; };
+		DAE1C0ED6AA64FFC86A5C1D8 /* no_mic.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCA1CBE3EFA4B2CBDB4CCCA /* no_mic.png */; };
+		DD9F8190851641D8B2FDF2F7 /* no_mic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FD7885666FD45968B72A7E3 /* no_mic@2x.png */; };
+		DFC6ED16607F41A8A0614C2E /* video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7745E1978DC34FBABF786626 /* video@2x.png */; };
+		DFE40D5E0E4840A9BFE08EF4 /* CDVConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D527F870461741C9B8DB62AD /* CDVConnection.m */; };
+		DFFD9C641706481DAD29F1F3 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0410E04A9A4B54ABBAA0E5 /* AFURLResponseSerialization.m */; };
+		E603CA366CB24E68BA3D48C2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F74EF177594D82971DBA76 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		ED0E31DC3952476CA7DB8E76 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A230EC33A40C4594A06A1E65 /* AFURLSessionManager.m */; };
+		EE4CA227B6924B76A7DAB578 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B5097643124C8287A49AA0 /* AFSecurityPolicy.m */; };
+		F2FF8C6465DA45E180DCF827 /* mic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF30E285FF284E30A4796E9B /* mic@3x.png */; };
+		F963150D9C9C44FDB2D6C144 /* BinaryRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F5064D841CD84A73BF792B13 /* BinaryRequestSerializer.m */; };
+		FD2BCCE69CCA451DACE175AC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D21C6AA2FE4BEBAD15DB1B /* Security.framework */; };
+		FEF155A1D58C4D75B22A0A94 /* switch_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDBC24B5DEB40A9BD3F977A /* switch_camera.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		907D8123214C687600058A10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C0C01EB21E3911D50056E6CB;
+			remoteInfo = Cordova;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		003E622E487B450D81584836 /* CDVStatusBar.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVStatusBar.m; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; };
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "ExAM RV/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		037869CCADAE433BB408EF70 /* TwilioVideoViewController.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = TwilioVideoViewController.m; path = "cordova-plugin-twilio-video/TwilioVideoViewController.m"; sourceTree = "<group>"; usesTabs = 0; };
+		0412135CF708422C9E4D2B58 /* IONAssetHandler.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = IONAssetHandler.h; path = "cordova-plugin-ionic-webview/IONAssetHandler.h"; sourceTree = "<group>"; };
+		06BA5792B66A4202A41B4A57 /* mic.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = mic.png; path = Resources/mic.png; sourceTree = "<group>"; };
+		085174DD4F3C4C1DAD864BF9 /* CDVAssetLibraryFilesystem.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVAssetLibraryFilesystem.h; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.h"; sourceTree = "<group>"; };
+		0C642DC1F24C4B50BA5DFA8E /* video@3x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "video@3x.png"; path = "Resources/video@3x.png"; sourceTree = "<group>"; };
+		0D4F5155A1CE429682B7E16C /* CDVLocalFilesystem.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVLocalFilesystem.h; path = "cordova-plugin-file/CDVLocalFilesystem.h"; sourceTree = "<group>"; };
+		15AC9372557440E6B8CA6BF2 /* CDVStatusBar.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; };
+		191C2AE6BB25471EB00A895D /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
+		1B10F1EC3AA54666A72BDD53 /* CDVAssetLibraryFilesystem.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVAssetLibraryFilesystem.m; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.m"; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* ExAM RV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ExAM RV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20225B7EED235FD2B9D61AD1 /* Pods-ExAM RV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExAM RV.release.xcconfig"; path = "Target Support Files/Pods-ExAM RV/Pods-ExAM RV.release.xcconfig"; sourceTree = "<group>"; };
+		244B0850964644CCAFDD1CC6 /* end_call.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = end_call.png; path = Resources/end_call.png; sourceTree = "<group>"; };
+		29A848CD90444A75BA9616A0 /* CordovaHttpPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CordovaHttpPlugin.h; path = "cordova-plugin-advanced-http/CordovaHttpPlugin.h"; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D747ADC51634134B5AC059F /* CDVReachability.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVReachability.h; path = "cordova-plugin-network-information/CDVReachability.h"; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		303A3B0A30D74753AD800E45 /* no_video.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = no_video.png; path = Resources/no_video.png; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		3254EB75188543FABF455393 /* TextRequestSerializer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = TextRequestSerializer.h; path = "cordova-plugin-advanced-http/TextRequestSerializer.h"; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* ExAM RV-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ExAM RV-Prefix.pch"; sourceTree = "<group>"; };
+		35890D90B8F84D8CB45C013A /* CDVWKWebViewUIDelegate.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVWKWebViewUIDelegate.m; path = "cordova-plugin-ionic-webview/CDVWKWebViewUIDelegate.m"; sourceTree = "<group>"; };
+		3ED313FE1D094BA6BD8E8BBC /* TwilioVideoManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = TwilioVideoManager.m; path = "cordova-plugin-twilio-video/TwilioVideoManager.m"; sourceTree = "<group>"; };
+		45D29EB768054BA5AF835813 /* IonicDeeplinkPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IonicDeeplinkPlugin.m; path = "ionic-plugin-deeplinks/IonicDeeplinkPlugin.m"; sourceTree = "<group>"; };
+		4916A724CE1643E8BB6B5415 /* AFURLSessionManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = "cordova-plugin-advanced-http/AFURLSessionManager.h"; sourceTree = "<group>"; };
+		49A578AB8E845EC026DA1974 /* libPods-ExAM RV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExAM RV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C2A392126224F6CBE44B223 /* CoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4C52461074CD4CC2A74DF7D3 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = "cordova-plugin-advanced-http/AFURLRequestSerialization.m"; sourceTree = "<group>"; };
+		4F72492DF605404596BD3B03 /* CDVConnection.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVConnection.h; path = "cordova-plugin-network-information/CDVConnection.h"; sourceTree = "<group>"; };
+		549B6C244BEA49D69E328042 /* CordovaHttpPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CordovaHttpPlugin.m; path = "cordova-plugin-advanced-http/CordovaHttpPlugin.m"; sourceTree = "<group>"; };
+		573CC8FC2518E94900BF9F81 /* no_video11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = no_video11.png; path = Resources/no_video11.png; sourceTree = "<group>"; };
+		573F65ED29023A7E0037AB26 /* menu.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = menu.svg; sourceTree = "<group>"; };
+		573F65F3290327E90037AB26 /* menu-502.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-502.png"; sourceTree = "<group>"; };
+		573F7D522518D49300139A5D /* no_mic1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = no_mic1.png; path = Resources/no_mic1.png; sourceTree = "<group>"; };
+		574EB22B251230C300773B27 /* ExAMRV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ExAMRV.png; path = Resources/ExAMRV.png; sourceTree = "<group>"; };
+		5753734525D1959200B4F6B9 /* end_callfupdated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = end_callfupdated.png; path = ../../../../../../icons/end_callfupdated.png; sourceTree = "<group>"; };
+		57557407251DBEAC0029C157 /* switch_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "switch_camera@2x.png"; path = "Resources/switch_camera@2x.png"; sourceTree = "<group>"; };
+		57557409251DBEB40029C157 /* no_video@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "no_video@3x.png"; path = "Resources/no_video@3x.png"; sourceTree = "<group>"; };
+		5755740B251DBEB90029C157 /* no_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "no_video@2x.png"; path = "Resources/no_video@2x.png"; sourceTree = "<group>"; };
+		57557410251DDC4F0029C157 /* micf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = micf.png; path = ../../../../../../icons/micf.png; sourceTree = "<group>"; };
+		5755741D251DDD270029C157 /* camera_switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera_switch.png; path = ../../../../../../icons/camera_switch.png; sourceTree = "<group>"; };
+		57557420251DDD8B0029C157 /* end_callf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = end_callf.png; path = ../../../../../../icons/end_callf.png; sourceTree = "<group>"; };
+		57557423251DE5250029C157 /* videof.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = videof.png; path = ../../../../../../icons/videof.png; sourceTree = "<group>"; };
+		57557425251DE5550029C157 /* videof.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = videof.png; path = ../../../../../../icons/videof.png; sourceTree = "<group>"; };
+		5783CFA728FEB764000BD1F8 /* close-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-50.png"; sourceTree = "<group>"; };
+		5783CFB028FEB7EC000BD1F8 /* menu-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-50.png"; sourceTree = "<group>"; };
+		57994FEF2534770100E45582 /* ExAM_RV-MG-Paused.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ExAM_RV-MG-Paused.png"; sourceTree = "<group>"; };
+		57994FF2253604C200E45582 /* ExAM_RV-MG-Paused2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ExAM_RV-MG-Paused2.png"; sourceTree = "<group>"; };
+		579FE74C25CAECDD00DE4B29 /* flashoff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flashoff.png; sourceTree = "<group>"; };
+		579FE74E25CAED5600DE4B29 /* flashon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flashon.png; sourceTree = "<group>"; };
+		5A9CDD6FF21E49DCA8D7B84C /* AFSecurityPolicy.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = "cordova-plugin-advanced-http/AFSecurityPolicy.h"; sourceTree = "<group>"; };
+		5AC7BF7A771F47BB90B938CE /* TwilioVideoPermissions.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = TwilioVideoPermissions.h; path = "cordova-plugin-twilio-video/TwilioVideoPermissions.h"; sourceTree = "<group>"; };
+		5AC9FC8857194A0A9D2394DD /* TextRequestSerializer.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = TextRequestSerializer.m; path = "cordova-plugin-advanced-http/TextRequestSerializer.m"; sourceTree = "<group>"; };
+		624068A469434BF285A63B6A /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = "cordova-plugin-advanced-http/AFNetworkReachabilityManager.m"; sourceTree = "<group>"; };
+		6278815EB17B42B3BBB9EF50 /* CDVWKProcessPoolFactory.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVWKProcessPoolFactory.h; path = "cordova-plugin-ionic-webview/CDVWKProcessPoolFactory.h"; sourceTree = "<group>"; };
+		63133C15D8ED433B846BD537 /* CDVWKWebViewEngine.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVWKWebViewEngine.h; path = "cordova-plugin-ionic-webview/CDVWKWebViewEngine.h"; sourceTree = "<group>"; };
+		639A10B1AC1A41D3A0904AC5 /* SDNetworkActivityIndicator.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = SDNetworkActivityIndicator.m; path = "cordova-plugin-advanced-http/SDNetworkActivityIndicator.m"; sourceTree = "<group>"; };
+		682B6AF229764498B8E77804 /* BinaryResponseSerializer.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = BinaryResponseSerializer.m; path = "cordova-plugin-advanced-http/BinaryResponseSerializer.m"; sourceTree = "<group>"; };
+		68655612C2733E6564240FBE /* Pods-ExAM RV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExAM RV.debug.xcconfig"; path = "Target Support Files/Pods-ExAM RV/Pods-ExAM RV.debug.xcconfig"; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "ExAM RV/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		6CD5FA2B126040BF933866AE /* no_video@3x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "no_video@3x.png"; path = "Resources/no_video@3x.png"; sourceTree = "<group>"; };
+		6FEFDFC57CDB4D5A9C076651 /* TwilioVideoUtils.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = TwilioVideoUtils.h; path = "cordova-plugin-twilio-video/TwilioVideoUtils.h"; sourceTree = "<group>"; };
+		70311E4CA6654B81AD3BD3B5 /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; };
+		73A06B817D974E848505B5F9 /* TextResponseSerializer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = TextResponseSerializer.h; path = "cordova-plugin-advanced-http/TextResponseSerializer.h"; sourceTree = "<group>"; };
+		7588080FFE61400CA70D32AA /* SDNetworkActivityIndicator.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SDNetworkActivityIndicator.h; path = "cordova-plugin-advanced-http/SDNetworkActivityIndicator.h"; sourceTree = "<group>"; };
+		759AC4E1CF594DFDB26C751F /* CDVLocation.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVLocation.h; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; };
+		75E7D5A3AA09432195428E10 /* CDVSplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVSplashScreen.m; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; };
+		76A1B9EE5BB948E2AC282962 /* TwilioVideoViewController.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = TwilioVideoViewController.h; path = "cordova-plugin-twilio-video/TwilioVideoViewController.h"; sourceTree = "<group>"; };
+		76DB04ABB61141B8844BB2FB /* CDVReachability.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVReachability.m; path = "cordova-plugin-network-information/CDVReachability.m"; sourceTree = "<group>"; };
+		7745E1978DC34FBABF786626 /* video@2x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "video@2x.png"; path = "Resources/video@2x.png"; sourceTree = "<group>"; };
+		78BA841BB94C4674B04A6518 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = "cordova-plugin-advanced-http/AFURLRequestSerialization.h"; sourceTree = "<group>"; };
+		7CE6D0EFC1CA454082F26DBB /* IonicDeeplinkPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = IonicDeeplinkPlugin.h; path = "ionic-plugin-deeplinks/IonicDeeplinkPlugin.h"; sourceTree = "<group>"; };
+		7F26A7B0120846BBA9128A7B /* TwilioVideoConfig.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = TwilioVideoConfig.h; path = "cordova-plugin-twilio-video/TwilioVideoConfig.h"; sourceTree = "<group>"; };
+		7FD7885666FD45968B72A7E3 /* no_mic@2x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "no_mic@2x.png"; path = "Resources/no_mic@2x.png"; sourceTree = "<group>"; };
+		7FDF7B16C4D84EFCB387E39C /* CDVWKWebViewEngine.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVWKWebViewEngine.m; path = "cordova-plugin-ionic-webview/CDVWKWebViewEngine.m"; sourceTree = "<group>"; };
+		8285CAD67ED242F6BA2F467E /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = "cordova-plugin-advanced-http/AFNetworkReachabilityManager.h"; sourceTree = "<group>"; };
+		833056642A8C47348F27395A /* CDVIonicKeyboard.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVIonicKeyboard.h; path = "cordova-plugin-ionic-keyboard/CDVIonicKeyboard.h"; sourceTree = "<group>"; };
+		86C8B4F17BFA434E8E0D7895 /* TwilioVideoManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = TwilioVideoManager.h; path = "cordova-plugin-twilio-video/TwilioVideoManager.h"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* ExAM RV-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ExAM RV-Info.plist"; path = "ExAM RV/ExAM RV-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		8DAC5E9586954A1E9D037433 /* switch_camera@2x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "switch_camera@2x.png"; path = "Resources/switch_camera@2x.png"; sourceTree = "<group>"; };
+		8F0410E04A9A4B54ABBAA0E5 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = "cordova-plugin-advanced-http/AFURLResponseSerialization.m"; sourceTree = "<group>"; };
+		952863009BD64894917F7EE4 /* AppDelegate+IonicDeeplink.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+IonicDeeplink.m"; path = "ionic-plugin-deeplinks/AppDelegate+IonicDeeplink.m"; sourceTree = "<group>"; };
+		997FD6BC8C3E49E2B9B7B69C /* CDVWKProcessPoolFactory.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVWKProcessPoolFactory.m; path = "cordova-plugin-ionic-webview/CDVWKProcessPoolFactory.m"; sourceTree = "<group>"; };
+		99B5097643124C8287A49AA0 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = "cordova-plugin-advanced-http/AFSecurityPolicy.m"; sourceTree = "<group>"; };
+		9B2F72AE70884535B8865EE3 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = "cordova-plugin-advanced-http/AFHTTPSessionManager.m"; sourceTree = "<group>"; };
+		9CC11B67756C48EFA3668C62 /* CoreTelephony.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A230EC33A40C4594A06A1E65 /* AFURLSessionManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = "cordova-plugin-advanced-http/AFURLSessionManager.m"; sourceTree = "<group>"; };
+		A9E3EA734A7047749F550EC5 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = "cordova-plugin-advanced-http/AFHTTPSessionManager.h"; sourceTree = "<group>"; };
+		ABA41E69E54647C2AAD35403 /* CDVIonicKeyboard.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVIonicKeyboard.m; path = "cordova-plugin-ionic-keyboard/CDVIonicKeyboard.m"; sourceTree = "<group>"; };
+		AFAE5A3CE4AE499E9CB20C0D /* TwilioVideoPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = TwilioVideoPlugin.m; path = "cordova-plugin-twilio-video/TwilioVideoPlugin.m"; sourceTree = "<group>"; };
+		B3C50E17604F4E909438591B /* TwilioVideoPermissions.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = TwilioVideoPermissions.m; path = "cordova-plugin-twilio-video/TwilioVideoPermissions.m"; sourceTree = "<group>"; };
+		B99BE62CEE4740849F6BCB9D /* TwilioVideo.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = TwilioVideo.storyboard; path = Resources/TwilioVideo.storyboard; sourceTree = "<group>"; };
+		BA9683202779423DB95085F6 /* end_call@2x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "end_call@2x.png"; path = "Resources/end_call@2x.png"; sourceTree = "<group>"; };
+		BAE6D3341C564AD99A6933F7 /* BinaryResponseSerializer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = BinaryResponseSerializer.h; path = "cordova-plugin-advanced-http/BinaryResponseSerializer.h"; sourceTree = "<group>"; };
+		BDD44C998D15492AA20D1A85 /* TwilioVideoConfig.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = TwilioVideoConfig.m; path = "cordova-plugin-twilio-video/TwilioVideoConfig.m"; sourceTree = "<group>"; };
+		BE19F5A634F94AFDA70EBA41 /* mic@2x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "mic@2x.png"; path = "Resources/mic@2x.png"; sourceTree = "<group>"; };
+		BE225AFB484E4AA094DC0549 /* AFNetworking.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = "cordova-plugin-advanced-http/AFNetworking.h"; sourceTree = "<group>"; };
+		BF30E285FF284E30A4796E9B /* mic@3x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "mic@3x.png"; path = "Resources/mic@3x.png"; sourceTree = "<group>"; };
+		C0D0793DEB3A4C588D249629 /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; };
+		C9B20AB0A72F4DA394771CDD /* video.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = video.png; path = Resources/video.png; sourceTree = "<group>"; };
+		CBCA1CBE3EFA4B2CBDB4CCCA /* no_mic.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = no_mic.png; path = Resources/no_mic.png; sourceTree = "<group>"; };
+		D1990A038F984E3C97ECB37F /* TwilioVideoUtils.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = TwilioVideoUtils.m; path = "cordova-plugin-twilio-video/TwilioVideoUtils.m"; sourceTree = "<group>"; };
+		D2D5CD9AAAF04B2DAEFB7800 /* no_mic@3x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "no_mic@3x.png"; path = "Resources/no_mic@3x.png"; sourceTree = "<group>"; };
+		D2FEA86B3A2444E6ADD21FA7 /* CDVFile.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVFile.h; path = "cordova-plugin-file/CDVFile.h"; sourceTree = "<group>"; };
+		D4A03AFFF3B040A28AA66D06 /* BinaryRequestSerializer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = BinaryRequestSerializer.h; path = "cordova-plugin-advanced-http/BinaryRequestSerializer.h"; sourceTree = "<group>"; };
+		D527F870461741C9B8DB62AD /* CDVConnection.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVConnection.m; path = "cordova-plugin-network-information/CDVConnection.m"; sourceTree = "<group>"; };
+		D950CFEAE80C48AEB5373B60 /* no_video@2x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "no_video@2x.png"; path = "Resources/no_video@2x.png"; sourceTree = "<group>"; };
+		DB66400FB7A54C6BA3EDC17C /* CDVWKWebViewUIDelegate.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVWKWebViewUIDelegate.h; path = "cordova-plugin-ionic-webview/CDVWKWebViewUIDelegate.h"; sourceTree = "<group>"; };
+		DDD18D0FA7E04C838BB02D15 /* CDVLocalFilesystem.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVLocalFilesystem.m; path = "cordova-plugin-file/CDVLocalFilesystem.m"; sourceTree = "<group>"; };
+		DEAB889C57B74D5D908F4627 /* WebKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		DFDBC24B5DEB40A9BD3F977A /* switch_camera.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = switch_camera.png; path = Resources/switch_camera.png; sourceTree = "<group>"; };
+		E1019DBE7915453C9E7C1479 /* TwilioVideoPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = TwilioVideoPlugin.h; path = "cordova-plugin-twilio-video/TwilioVideoPlugin.h"; sourceTree = "<group>"; };
+		E4D21C6AA2FE4BEBAD15DB1B /* Security.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EA2E4D95B79045E2A6533EC5 /* CDVDevice.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		EE64CD6E60D443A1A22A2878 /* CDVLocation.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVLocation.m; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; };
+		F2D0CC14643A4D5C95CC0081 /* TextResponseSerializer.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = TextResponseSerializer.m; path = "cordova-plugin-advanced-http/TextResponseSerializer.m"; sourceTree = "<group>"; };
+		F2F74EF177594D82971DBA76 /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F5064D841CD84A73BF792B13 /* BinaryRequestSerializer.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = BinaryRequestSerializer.m; path = "cordova-plugin-advanced-http/BinaryRequestSerializer.m"; sourceTree = "<group>"; };
+		F612E22283F4485FB2BF936B /* CDVSplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVSplashScreen.h; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "ExAM RV/config.xml"; sourceTree = "<group>"; };
+		FC05CCA58018417F9B41C500 /* IONAssetHandler.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IONAssetHandler.m; path = "cordova-plugin-ionic-webview/IONAssetHandler.m"; sourceTree = "<group>"; };
+		FF51166FAA7D4125ABD73B51 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = "cordova-plugin-advanced-http/AFURLResponseSerialization.h"; sourceTree = "<group>"; };
+		FF781F11C4724E02A7329DF9 /* CDVFile.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVFile.m; path = "cordova-plugin-file/CDVFile.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				CBFC3D9574954343943FE462 /* WebKit.framework in Frameworks */,
+				E603CA366CB24E68BA3D48C2 /* SystemConfiguration.framework in Frameworks */,
+				68C44EE17E3F42A580146DB8 /* CoreTelephony.framework in Frameworks */,
+				3BD6E83A5FC5F1854632B4CB /* libPods-ExAM RV.a in Frameworks */,
+				8038F58343F0489193E08C9F /* CoreLocation.framework in Frameworks */,
+				FD2BCCE69CCA451DACE175AC /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = "ExAM RV/Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* ExAM RV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				F37F4AC9A7FEA094225E1522 /* Pods */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* ExAM RV-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = "ExAM RV";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* ExAM RV-Info.plist */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				B99BE62CEE4740849F6BCB9D /* TwilioVideo.storyboard */,
+				57994FEF2534770100E45582 /* ExAM_RV-MG-Paused.png */,
+				57557425251DE5550029C157 /* videof.png */,
+				579FE74E25CAED5600DE4B29 /* flashon.png */,
+				57557410251DDC4F0029C157 /* micf.png */,
+				57557423251DE5250029C157 /* videof.png */,
+				579FE74C25CAECDD00DE4B29 /* flashoff.png */,
+				244B0850964644CCAFDD1CC6 /* end_call.png */,
+				57994FF2253604C200E45582 /* ExAM_RV-MG-Paused2.png */,
+				BA9683202779423DB95085F6 /* end_call@2x.png */,
+				57557420251DDD8B0029C157 /* end_callf.png */,
+				5755741D251DDD270029C157 /* camera_switch.png */,
+				06BA5792B66A4202A41B4A57 /* mic.png */,
+				BE19F5A634F94AFDA70EBA41 /* mic@2x.png */,
+				573F7D522518D49300139A5D /* no_mic1.png */,
+				BF30E285FF284E30A4796E9B /* mic@3x.png */,
+				CBCA1CBE3EFA4B2CBDB4CCCA /* no_mic.png */,
+				7FD7885666FD45968B72A7E3 /* no_mic@2x.png */,
+				574EB22B251230C300773B27 /* ExAMRV.png */,
+				5755740B251DBEB90029C157 /* no_video@2x.png */,
+				573F65F3290327E90037AB26 /* menu-502.png */,
+				573CC8FC2518E94900BF9F81 /* no_video11.png */,
+				D2D5CD9AAAF04B2DAEFB7800 /* no_mic@3x.png */,
+				573F65ED29023A7E0037AB26 /* menu.svg */,
+				C9B20AB0A72F4DA394771CDD /* video.png */,
+				57557409251DBEB40029C157 /* no_video@3x.png */,
+				5783CFB028FEB7EC000BD1F8 /* menu-50.png */,
+				57557407251DBEAC0029C157 /* switch_camera@2x.png */,
+				5783CFA728FEB764000BD1F8 /* close-50.png */,
+				5753734525D1959200B4F6B9 /* end_callfupdated.png */,
+				7745E1978DC34FBABF786626 /* video@2x.png */,
+				0C642DC1F24C4B50BA5DFA8E /* video@3x.png */,
+				303A3B0A30D74753AD800E45 /* no_video.png */,
+				D950CFEAE80C48AEB5373B60 /* no_video@2x.png */,
+				6CD5FA2B126040BF933866AE /* no_video@3x.png */,
+				DFDBC24B5DEB40A9BD3F977A /* switch_camera.png */,
+				8DAC5E9586954A1E9D037433 /* switch_camera@2x.png */,
+			);
+			name = Resources;
+			path = "ExAM RV/Resources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB889C57B74D5D908F4627 /* WebKit.framework */,
+				F2F74EF177594D82971DBA76 /* SystemConfiguration.framework */,
+				9CC11B67756C48EFA3668C62 /* CoreTelephony.framework */,
+				49A578AB8E845EC026DA1974 /* libPods-ExAM RV.a */,
+				4C2A392126224F6CBE44B223 /* CoreLocation.framework */,
+				E4D21C6AA2FE4BEBAD15DB1B /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+				907D8124214C687600058A10 /* Cordova.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E4D95B79045E2A6533EC5 /* CDVDevice.m */,
+				191C2AE6BB25471EB00A895D /* CDVDevice.h */,
+				ABA41E69E54647C2AAD35403 /* CDVIonicKeyboard.m */,
+				833056642A8C47348F27395A /* CDVIonicKeyboard.h */,
+				7FDF7B16C4D84EFCB387E39C /* CDVWKWebViewEngine.m */,
+				35890D90B8F84D8CB45C013A /* CDVWKWebViewUIDelegate.m */,
+				997FD6BC8C3E49E2B9B7B69C /* CDVWKProcessPoolFactory.m */,
+				FC05CCA58018417F9B41C500 /* IONAssetHandler.m */,
+				63133C15D8ED433B846BD537 /* CDVWKWebViewEngine.h */,
+				DB66400FB7A54C6BA3EDC17C /* CDVWKWebViewUIDelegate.h */,
+				6278815EB17B42B3BBB9EF50 /* CDVWKProcessPoolFactory.h */,
+				0412135CF708422C9E4D2B58 /* IONAssetHandler.h */,
+				D527F870461741C9B8DB62AD /* CDVConnection.m */,
+				76DB04ABB61141B8844BB2FB /* CDVReachability.m */,
+				4F72492DF605404596BD3B03 /* CDVConnection.h */,
+				2D747ADC51634134B5AC059F /* CDVReachability.h */,
+				75E7D5A3AA09432195428E10 /* CDVSplashScreen.m */,
+				70311E4CA6654B81AD3BD3B5 /* CDVViewController+SplashScreen.m */,
+				F612E22283F4485FB2BF936B /* CDVSplashScreen.h */,
+				C0D0793DEB3A4C588D249629 /* CDVViewController+SplashScreen.h */,
+				003E622E487B450D81584836 /* CDVStatusBar.m */,
+				15AC9372557440E6B8CA6BF2 /* CDVStatusBar.h */,
+				AFAE5A3CE4AE499E9CB20C0D /* TwilioVideoPlugin.m */,
+				B3C50E17604F4E909438591B /* TwilioVideoPermissions.m */,
+				76A1B9EE5BB948E2AC282962 /* TwilioVideoViewController.h */,
+				037869CCADAE433BB408EF70 /* TwilioVideoViewController.m */,
+				3ED313FE1D094BA6BD8E8BBC /* TwilioVideoManager.m */,
+				BDD44C998D15492AA20D1A85 /* TwilioVideoConfig.m */,
+				D1990A038F984E3C97ECB37F /* TwilioVideoUtils.m */,
+				E1019DBE7915453C9E7C1479 /* TwilioVideoPlugin.h */,
+				5AC7BF7A771F47BB90B938CE /* TwilioVideoPermissions.h */,
+				86C8B4F17BFA434E8E0D7895 /* TwilioVideoManager.h */,
+				7F26A7B0120846BBA9128A7B /* TwilioVideoConfig.h */,
+				6FEFDFC57CDB4D5A9C076651 /* TwilioVideoUtils.h */,
+				952863009BD64894917F7EE4 /* AppDelegate+IonicDeeplink.m */,
+				45D29EB768054BA5AF835813 /* IonicDeeplinkPlugin.m */,
+				7CE6D0EFC1CA454082F26DBB /* IonicDeeplinkPlugin.h */,
+				EE64CD6E60D443A1A22A2878 /* CDVLocation.m */,
+				759AC4E1CF594DFDB26C751F /* CDVLocation.h */,
+				FF781F11C4724E02A7329DF9 /* CDVFile.m */,
+				DDD18D0FA7E04C838BB02D15 /* CDVLocalFilesystem.m */,
+				1B10F1EC3AA54666A72BDD53 /* CDVAssetLibraryFilesystem.m */,
+				D2FEA86B3A2444E6ADD21FA7 /* CDVFile.h */,
+				0D4F5155A1CE429682B7E16C /* CDVLocalFilesystem.h */,
+				085174DD4F3C4C1DAD864BF9 /* CDVAssetLibraryFilesystem.h */,
+				549B6C244BEA49D69E328042 /* CordovaHttpPlugin.m */,
+				F5064D841CD84A73BF792B13 /* BinaryRequestSerializer.m */,
+				682B6AF229764498B8E77804 /* BinaryResponseSerializer.m */,
+				F2D0CC14643A4D5C95CC0081 /* TextResponseSerializer.m */,
+				5AC9FC8857194A0A9D2394DD /* TextRequestSerializer.m */,
+				9B2F72AE70884535B8865EE3 /* AFHTTPSessionManager.m */,
+				624068A469434BF285A63B6A /* AFNetworkReachabilityManager.m */,
+				99B5097643124C8287A49AA0 /* AFSecurityPolicy.m */,
+				4C52461074CD4CC2A74DF7D3 /* AFURLRequestSerialization.m */,
+				8F0410E04A9A4B54ABBAA0E5 /* AFURLResponseSerialization.m */,
+				A230EC33A40C4594A06A1E65 /* AFURLSessionManager.m */,
+				639A10B1AC1A41D3A0904AC5 /* SDNetworkActivityIndicator.m */,
+				29A848CD90444A75BA9616A0 /* CordovaHttpPlugin.h */,
+				D4A03AFFF3B040A28AA66D06 /* BinaryRequestSerializer.h */,
+				BAE6D3341C564AD99A6933F7 /* BinaryResponseSerializer.h */,
+				73A06B817D974E848505B5F9 /* TextResponseSerializer.h */,
+				3254EB75188543FABF455393 /* TextRequestSerializer.h */,
+				A9E3EA734A7047749F550EC5 /* AFHTTPSessionManager.h */,
+				BE225AFB484E4AA094DC0549 /* AFNetworking.h */,
+				8285CAD67ED242F6BA2F467E /* AFNetworkReachabilityManager.h */,
+				5A9CDD6FF21E49DCA8D7B84C /* AFSecurityPolicy.h */,
+				78BA841BB94C4674B04A6518 /* AFURLRequestSerialization.h */,
+				FF51166FAA7D4125ABD73B51 /* AFURLResponseSerialization.h */,
+				4916A724CE1643E8BB6B5415 /* AFURLSessionManager.h */,
+				7588080FFE61400CA70D32AA /* SDNetworkActivityIndicator.h */,
+			);
+			name = Plugins;
+			path = "ExAM RV/Plugins";
+			sourceTree = SOURCE_ROOT;
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+		F37F4AC9A7FEA094225E1522 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68655612C2733E6564240FBE /* Pods-ExAM RV.debug.xcconfig */,
+				20225B7EED235FD2B9D61AD1 /* Pods-ExAM RV.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* ExAM RV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ExAM RV" */;
+			buildPhases = (
+				58074022D96FAE9FE3B929C6 /* [CP] Check Pods Manifest.lock */,
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				69C096746D247C3CD0DAB076 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = "ExAM RV";
+			productName = "ExAM RV";
+			productReference = 1D6058910D05DD3D006BFB54 /* ExAM RV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ExAM RV" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* ExAM RV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		907D8124214C687600058A10 /* Cordova.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cordova.framework;
+			remoteRef = 907D8123214C687600058A10 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				5783CFA828FEB765000BD1F8 /* close-50.png in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				5755741E251DDD270029C157 /* camera_switch.png in Resources */,
+				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+				579FE74D25CAECDD00DE4B29 /* flashoff.png in Resources */,
+				08FEF65276F64E459A04A99D /* TwilioVideo.storyboard in Resources */,
+				573F65EF29023A7F0037AB26 /* menu.svg in Resources */,
+				B339ACE3A24B432594C1328B /* end_call.png in Resources */,
+				1306EC99A61F44D7907FAF9F /* end_call@2x.png in Resources */,
+				7BFECAB7144646A38EA483E7 /* mic.png in Resources */,
+				9B0F70517E0C446285142B89 /* mic@2x.png in Resources */,
+				F2FF8C6465DA45E180DCF827 /* mic@3x.png in Resources */,
+				57994FF02534770100E45582 /* ExAM_RV-MG-Paused.png in Resources */,
+				57557408251DBEAC0029C157 /* switch_camera@2x.png in Resources */,
+				57994FF3253604C200E45582 /* ExAM_RV-MG-Paused2.png in Resources */,
+				5753734725D1959500B4F6B9 /* end_callfupdated.png in Resources */,
+				DAE1C0ED6AA64FFC86A5C1D8 /* no_mic.png in Resources */,
+				5783CFB128FEB7EC000BD1F8 /* menu-50.png in Resources */,
+				DD9F8190851641D8B2FDF2F7 /* no_mic@2x.png in Resources */,
+				DA5E274E30274F5A9688529F /* no_mic@3x.png in Resources */,
+				5BA97973479B481BAD67FFAC /* video.png in Resources */,
+				DFC6ED16607F41A8A0614C2E /* video@2x.png in Resources */,
+				574EB22D251230C300773B27 /* ExAMRV.png in Resources */,
+				573F65F5290327E90037AB26 /* menu-502.png in Resources */,
+				5755740C251DBEB90029C157 /* no_video@2x.png in Resources */,
+				52EE6F575AD04F7B93F5F156 /* video@3x.png in Resources */,
+				5EC478B1C82340C0A07F87FA /* no_video.png in Resources */,
+				B0EBB19EF94C413594FFDEEA /* no_video@2x.png in Resources */,
+				67944832D43D44CBB94A4CA6 /* no_video@3x.png in Resources */,
+				573F7D532518D49A00139A5D /* no_mic1.png in Resources */,
+				57557422251DDD8B0029C157 /* end_callf.png in Resources */,
+				579FE74F25CAED5700DE4B29 /* flashon.png in Resources */,
+				FEF155A1D58C4D75B22A0A94 /* switch_camera.png in Resources */,
+				57557426251DE5550029C157 /* videof.png in Resources */,
+				57557424251DE5250029C157 /* videof.png in Resources */,
+				5755740A251DBEB40029C157 /* no_video@3x.png in Resources */,
+				AE403552F24E46C6BF3769E2 /* switch_camera@2x.png in Resources */,
+				57557411251DDC4F0029C157 /* micf.png in Resources */,
+				573CC8FE2518E94900BF9F81 /* no_video11.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/ExAM RV/Scripts/copy-www-build-step.sh\"";
+			showEnvVarsInLog = 0;
+		};
+		58074022D96FAE9FE3B929C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExAM RV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69C096746D247C3CD0DAB076 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExAM RV/Pods-ExAM RV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExAM RV/Pods-ExAM RV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExAM RV/Pods-ExAM RV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				75BE47D405AC41A9B274E8D5 /* CDVDevice.m in Sources */,
+				2673675E5A8C4751BE9B663D /* CDVIonicKeyboard.m in Sources */,
+				D8BCEBC365C144BFA948B983 /* CDVWKWebViewEngine.m in Sources */,
+				72E978D381CF455C8740E616 /* CDVWKWebViewUIDelegate.m in Sources */,
+				BF0496E53B59452D8E77C17E /* CDVWKProcessPoolFactory.m in Sources */,
+				B1FBDF8FF368416295EB64B5 /* IONAssetHandler.m in Sources */,
+				DFE40D5E0E4840A9BFE08EF4 /* CDVConnection.m in Sources */,
+				D9A6911EC19747E2939E1191 /* CDVReachability.m in Sources */,
+				1A150054DBFE46DF833ABA6F /* CDVSplashScreen.m in Sources */,
+				BA6D7AF8FAD147B8A730E121 /* CDVViewController+SplashScreen.m in Sources */,
+				0B27B708022F4454A3C424E9 /* CDVStatusBar.m in Sources */,
+				C5B281E4C79D45B6A250029B /* TwilioVideoPlugin.m in Sources */,
+				0B8C62EF5F7B4C5693771259 /* TwilioVideoPermissions.m in Sources */,
+				1CD84DFF0DE947B6BE76C60F /* TwilioVideoViewController.m in Sources */,
+				4F1A485375374737AAB2FE8F /* TwilioVideoManager.m in Sources */,
+				19E88B0FFC774F95BC743511 /* TwilioVideoConfig.m in Sources */,
+				1D34B34F85C9463EB360BBAE /* TwilioVideoUtils.m in Sources */,
+				7E7A6EE8A51A4392BE756824 /* AppDelegate+IonicDeeplink.m in Sources */,
+				8A884C4D55404A4C9F6D3C69 /* IonicDeeplinkPlugin.m in Sources */,
+				599ABA99441E43D29E3887CB /* CDVLocation.m in Sources */,
+				774CFD0C5D2A491FAB6DEFD1 /* CDVFile.m in Sources */,
+				26DFE0B171BB480D97233E7B /* CDVLocalFilesystem.m in Sources */,
+				24EC0811B0A6400DAEE043AF /* CDVAssetLibraryFilesystem.m in Sources */,
+				7EC822758DCA4BEEBB1BDD97 /* CordovaHttpPlugin.m in Sources */,
+				F963150D9C9C44FDB2D6C144 /* BinaryRequestSerializer.m in Sources */,
+				6AC832908E5344E7A3217D30 /* BinaryResponseSerializer.m in Sources */,
+				C1CFB2E4A30F4B77AA135590 /* TextResponseSerializer.m in Sources */,
+				B75B763B3BC04B00BF51F2AF /* TextRequestSerializer.m in Sources */,
+				04F2CF21EA7549F8A3F9F193 /* AFHTTPSessionManager.m in Sources */,
+				A124370496614F2B8BD82A8D /* AFNetworkReachabilityManager.m in Sources */,
+				EE4CA227B6924B76A7DAB578 /* AFSecurityPolicy.m in Sources */,
+				34D2873C40274FC1B2CCCC03 /* AFURLRequestSerialization.m in Sources */,
+				DFFD9C641706481DAD29F1F3 /* AFURLResponseSerialization.m in Sources */,
+				ED0E31DC3952476CA7DB8E76 /* AFURLSessionManager.m in Sources */,
+				312B7E8CF7D94B80BDE5439E /* SDNetworkActivityIndicator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.0.1;
+				DEVELOPMENT_TEAM = ZA832P2T39;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExAM RV/ExAM RV-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "ExAM RV/ExAM RV-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MARKETING_VERSION = 0.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = examrv.mbaoutcome.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 0.0.1;
+				DEVELOPMENT_TEAM = ZA832P2T39;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExAM RV/ExAM RV-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "ExAM RV/ExAM RV-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MARKETING_VERSION = 0.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = examrv.mbaoutcome.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				WK_WEB_VIEW_ONLY = 1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				WK_WEB_VIEW_ONLY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ExAM RV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ExAM RV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

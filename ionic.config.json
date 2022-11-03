@@ -1,0 +1,7 @@
+{
+  "name": "ExAM_RV",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

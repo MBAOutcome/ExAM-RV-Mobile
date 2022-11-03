@@ -1,0 +1,154 @@
+<ion-header>
+  <ion-toolbar    [style.background-color]="schemacolor"  [style.background]="schemacolor" [style.--background]="schemacolor" style="--background: {{schemacolor}} !important;">
+    <ion-title class="ion-text-center" [style.color]="headercolor"  [style.color]="headercolor" [style.--color]="headercolor" style="--color: {{headercolor}} !important;"  text-capitalize >ExAM RV </ion-title>
+    <img  class="showicon">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="--background: #E2E2E2!important;">
+ 
+  <form [formGroup]="loginForm" novalidate>
+
+    <article class="slds-card loginCard">
+      <div class="slds-card__header slds-grid" [style.background-color]="schemacolor"  [style.border-color]="schemacolor"  style="text-align: center;padding-bottom: 12px;">
+        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+          <div class="slds-media__body">
+            <h2 class="slds-card__header-title">
+                <span>Join Remote Video Inspection</span>
+            </h2>
+          </div>
+        </header>
+      </div>
+      <div class="slds-card__body slds-card__body_inner">
+
+        <div class="slds-form-element" style="display:none">
+          <label class="slds-form-element__label" for="roomtext">Room Name</label>
+          <div class="slds-form-element__control">
+            <input type="text" style="padding-left:10px !important;"  class="slds-input removeShadowInput" id="roomtext" formControlName="roomName"  [(ngModel)]="RoomName.RoomName"/>
+          </div>
+        </div>
+
+
+        <div class="slds-form-element" [ngStyle]= "RoomName.RoomName?{'display':'block'} : {'display':'none'}">
+          <label class="slds-form-element__label" for="roomtext">Room Name</label>
+          <div class="slds-form-element__control">
+            <ion-label>{{RoomName.RoomName}}</ion-label>
+          </div>
+        </div>
+
+        <span class="error-message ion-padding" [ngStyle]= "RoomName.RoomName?{'display':'block'} : {'display':'none'}" *ngIf="(isSubmitted && loginForm.controls.roomName.errors && loginForm.controls.roomName.errors.required) || (loginForm.controls.roomName.touched && loginForm.controls.roomName.errors && loginForm.controls.roomName.errors.required)" >
+          Enter a Room Name
+        </span>
+
+        <div class="slds-form-element" [ngStyle]= "RoomName.RoomName?{'display':'none'} : {'display':'block'}" >
+          <label class="slds-form-element__label" for="linktext">Paste or Enter Room Link</label>
+          <div class="slds-form-element__control">
+            <input type="text" style="padding-left:10px !important;" id="linktext" class="slds-input removeShadowInput"  formControlName="roomlink" [(ngModel)]="roomlink.sortLink" (change)="validateLink();"/>
+          </div>
+        </div>
+        
+        <span class="error-message ion-padding" [ngStyle]= "RoomName.RoomName?{'display':'none'} : {'display':'block'}" *ngIf="isSortlinkvalid">
+          Enter a valid link
+        </span>
+
+        <!-- <div class="slds-form-element" [ngStyle]= "RoomName.RoomName?{'display':'none'} : {'display':'block'}" >
+          <label class="slds-form-element__label" for="linktext">Paste or Enter Room Link</label>
+          <div class="slds-form-element__control">
+            <ion-grid>
+              <ion-row>
+                <ion-col size="11">
+                  <div> 
+                    <input type="text" style="padding-left:10px !important;" id="linktext" class="slds-input removeShadowInput"  formControlName="roomlink" [(ngModel)]="roomlink.sortLink"/>
+                  </div>
+                </ion-col>
+                <ion-col size="1">
+                  <div>
+                    <ion-icon  style="font-size:25px;float:right;" name="pencil" (click)="openEditModal();"></ion-icon>
+                  </div>
+                </ion-col>
+              
+              </ion-row>
+            </ion-grid>
+          </div>
+        </div> -->
+
+       <!-- <div class="slds-form-element">
+          <label class="slds-form-element__label" for="roomtext">Room Name</label>
+          <div class="slds-form-element__control">
+            <ion-item lines="none" class="roomnam" >
+              <ion-label>{{RoomName.RoomName}}</ion-label>
+              <ion-icon name="pencil" (click)="openEditModal();"></ion-icon>
+
+            </ion-item>
+            
+          </div>
+        </div> -->
+
+   
+      
+        <div class="slds-form-element" >
+          <label class="slds-form-element__label"  for="nametext">Name</label>
+          <div class="slds-form-element__control">
+            <input type="text"  class="slds-input removeShadowInput" id="nametext" formControlName="userName"  [(ngModel)]="UserName"/>
+          </div>
+        </div>
+        
+        <span class="error-message ion-padding" *ngIf="(isSubmitted && loginForm.controls.userName.errors && loginForm.controls.userName.errors.required) || (loginForm.controls.userName.touched && loginForm.controls.userName.errors && loginForm.controls.userName.errors.required)" >
+          Enter a Name
+        </span>
+      </div>
+      <footer class="">
+        <div class="loginButton">
+          <button [style.background-color]="schemacolor"  [style.border-color]="schemacolor"   [style.color]="headercolor"  [style.color]="headercolor" [style.--color]="headercolor" style="--color: {{headercolor}} !important;" style="line-height:2.1rem !important" class="slds-button slds-button_brand slds-size--11-of-12 slds-medium-size--3-of-12 slds-large-size--3-of-12" (click)="joinRoom()">Join</button>
+        </div>
+      </footer>
+    </article>
+  </form>
+
+
+  <!-- <form [formGroup]="loginForm" novalidate>
+
+   <div class="loginCard slds">
+
+      <div class="slds-card">
+
+        <div class="slds-card__header" style="text-align: center;">
+          <h2 class="slds-card__header-title">Stream Video to ExAM RV Inspection</h2>
+        </div>
+
+        <div class="slds-card__body" style="margin:20px;">
+
+          <div class="slds-form-element">
+            <label class="slds-form-element__label" for="roomtext">Room ID</label>
+            <div class="slds-form-element__control">
+              <input type="text"   class="slds-input" id="roomtext" formControlName="roomName"  [(ngModel)]="RoomName.RoomName"/>
+            </div>
+          </div>
+            
+          <span class="error-message ion-padding" *ngIf="(isSubmitted && loginForm.controls.roomName.errors && loginForm.controls.roomName.errors.required) || (loginForm.controls.roomName.touched && loginForm.controls.roomName.errors && loginForm.controls.roomName.errors.required)" >
+              Please fill the value.
+          </span>
+          
+          <div class="slds-form-element" style="padding-top:10px;">
+            <label class="slds-form-element__label"  for="nametext">Enter your Name</label>
+            <div class="slds-form-element__control">
+              <input type="text"  class="slds-input" id="nametext" formControlName="userName"  [(ngModel)]="UserName"/>
+            </div>
+          </div>
+            
+          <span class="error-message ion-padding" *ngIf="(isSubmitted && loginForm.controls.userName.errors && loginForm.controls.userName.errors.required) || (loginForm.controls.userName.touched && loginForm.controls.userName.errors && loginForm.controls.userName.errors.required)" >
+              Please fill the value.
+          </span>
+        
+          <div class="loginButton">
+            <button style="--background:#4B7DB4;" class="slds-button slds-button_brand" (click)="joinRoom()">Join</button>
+          </div>
+            
+          </div>
+      </div>
+    </div> 
+  </form> -->
+</ion-content>
+
+
+

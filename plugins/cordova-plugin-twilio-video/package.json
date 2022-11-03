@@ -1,0 +1,35 @@
+{
+  "_from": "git+https://github.com/okode/cordova-plugin-twilio-video.git",
+  "_id": "cordova-plugin-twilio-video@4.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-twilio-video",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/okode/cordova-plugin-twilio-video",
+    "rawSpec": "https://github.com/okode/cordova-plugin-twilio-video",
+    "saveSpec": "git+https://github.com/okode/cordova-plugin-twilio-video.git",
+    "fetchSpec": "https://github.com/okode/cordova-plugin-twilio-video.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/okode/cordova-plugin-twilio-video.git#7ff56192b985704d8bb0e909989fcf05ac47dc6b",
+  "_spec": "https://github.com/okode/cordova-plugin-twilio-video",
+  "_where": "/Users/sivasankar/Desktop/ExAM RV 2/ExAM_RV",
+  "bundleDependencies": false,
+  "cordova_name": "Twilio video plugin",
+  "deprecated": false,
+  "description": "Cordova Plugin for Twilio Video",
+  "engines": {},
+  "license": "MIT",
+  "name": "cordova-plugin-twilio-video",
+  "platforms": [
+    "android",
+    "ios"
+  ],
+  "version": "4.0.0"
+}
